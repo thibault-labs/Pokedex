@@ -622,8 +622,8 @@ function openFiche(id){
 /* Section « Arbre du vivant » de la fiche : l'arbre (site separe) s'affiche dans un cadre UNIQUEMENT quand la section est depliee ;
    replier la section DECHARGE completement le cadre. Il s'ouvre deja sur le groupe de l'espece, chemin surligne depuis la racine.
    Les noms (espece, genre, famille, ordre, classe...) sont envoyes du plus precis au plus general : l'arbre retient le premier qu'il connait. */
-const FX_TREE_URL="https://malawigold66.github.io/Phylotree/";
-const FX_TREE_ORIGIN="https://malawigold66.github.io";
+const FX_TREE_URL="https://phylotree-mg.netlify.app/";
+const FX_TREE_ORIGIN="https://phylotree-mg.netlify.app";
 const FX_AR_DELAI=8000;   /* ms : sans reponse de l'arbre (ancienne version en ligne ?), on le dit */
 function fxArNoms(e){
  const R=[[e.nom_latin,"espèce","species"],[e.genre,"genre","genus"],[e.famille,"famille","family"],[e.ordre,"ordre","order"],[e.classe,"classe","class"],[e.phylum,"embranchement","phylum"],[e.regne,"règne","kingdom"]];
